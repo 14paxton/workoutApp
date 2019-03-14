@@ -166,7 +166,10 @@ switch ($action) {
             }
             
             $currentUser = user_db::validate_user_login($uName);
-            $_SESSION['currentUser'] = $currentUser;
+            $_SESSION['currentUser'] = $theUser;
+                $_SESSION['workOuts'] = user_db::get_workout_wt();
+                $_SESSION['workOutsStren'] = user_db::get_workout_stren();
+                $_SESSION['workOutsTab'] = user_db::get_workout_tab();
             include 'view/profile.php';
         }
 

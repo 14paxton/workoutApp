@@ -56,7 +56,8 @@
 
 
         <div class="main">
-
+            
+            <div class="about_banner_img"></div>
             <div class="about_banner_img"></div>
             <div class="about_banner_wrap">
                 <h1 class="m_11">Your Profile</h1>
